@@ -21,7 +21,7 @@ Jupyter Python notebooks are provide for data collection and processing/analysis
 * Data collection.ipynb - Jupyter Notebook for data collection
 * Data analysis.ipynb - Jupyter Notebook for data preprocessing, analysis and visualisation
 * chartspotifydata.csv - Listing of Annual Top100 chart songs from 2005 to 2022 (from officialcharts.com), combined with their associated Spotify audio feature data
-* 600kspotify.csv - a Kaggle dataset of approx, 600k songs with their associated Spotify audio feature data
+* 600kspotify.zip - a Kaggle dataset of approx, 600k songs with their associated Spotify audio feature data
 * kmeans_output.csv - Top100 chart song data with an additional column identifying their K-Means cluster assignment (output of the K-Means clustering sections)
 
 
@@ -39,10 +39,12 @@ A list of technologies used within the project:
 ***
 The follow instructions assume a working Python 3 / Jupyter Notebook installation:
 
-1. Download all files from this repository into a local folder.* Ensure that the Spotipy library (and any prerequisites) is installed (see the library documentation, you may try '!pip install spotipy')
-2. To aquire chart data and associated Spotify track audio features, launch and run the Jupyter Notebook file: "Data Collection". The output of this process is already provided for chart years 2005-20022 in the file "chartspotifydata.csv". Note that the Spotify API imposes rate limits and the code provided attempts to limit the request rate.
-3. Open the Jupyter Notebook file: "Data Analysing". This contains all preprocessing, analysis and modelling stages.
-4. Ensure that all sections of the Jupyter Notebook are run in sequential order, it is particularly important to ensure that the imports and Data Preparation sections are run at the start. Note that some functions have long runtimes, such as the K-Means and Random Forest optimisation algorithms; ensure that these functions have completed before progressing. 
+1. Download all files from this repository into a local folder.
+2. Unzip the 600kspotify.zip into your local folder. 
+3. Ensure that the Spotipy library (and any prerequisites) is installed (see the library documentation, you may try '!pip install spotipy').
+4. To aquire chart data and associated Spotify track audio features, launch and run the Jupyter Notebook file: "Data Collection". The output of this process is already provided for chart years 2005-20022 in the file "chartspotifydata.csv". Note that the Spotify API imposes rate limits and the code provided attempts to limit the request rate.
+5. Open the Jupyter Notebook file: "Data Analysing". This contains all preprocessing, analysis and modelling stages.
+6. Ensure that all sections of the Jupyter Notebook are run in sequential order, it is particularly important to ensure that the imports and Data Preparation sections are run at the start. Note that some functions have long runtimes, such as the K-Means and Random Forest optimisation algorithms; ensure that these functions have completed before progressing. 
 
 
 ## Notes
